@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/project.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="navbar">
+    <div class="logo">Portfolio</div>
+
+    <nav>
+        <a href="/main">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+        <a href="/projects" class="active">Projects</a>
+    </nav>
+
+    <div class="profile-pic">
+        <img src="../static/images/dhanunjaya.jpeg" alt="Profile">
+    </div>
+</header>
+
+<!-- MAIN -->
+<main class="projects-main">
+    <div class="projects-container">
+
+        <!-- Project Cards -->
+        {% for project in projects %}
+        <div class="project-card">
+            <h3>{{ project.title }}</h3>
+            <p>{{ project.desc }}</p>
+            <a href="{{ project.url }}" target="_blank" class="btn">View Project Repository</a>
+        </div>
+        {% endfor %}
+
+    </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>© 2026 Portfolio. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

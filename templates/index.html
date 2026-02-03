@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* HEADER */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            background: rgba(0,0,0,0.4);
+            backdrop-filter: blur(10px);
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        /* MAIN BODY */
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .hero span {
+            color: #00eaff;
+        }
+
+        .hero p {
+            font-size: 18px;
+            opacity: 0.9;
+            margin-bottom: 30px;
+            max-width: 700px;
+        }
+
+        .btn {
+            padding: 14px 35px;
+            font-size: 16px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            background: #00eaff;
+            color: #111;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,234,255,0.4);
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0,0,0,0.4);
+            font-size: 14px;
+            opacity: 0.85;
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="logo">Portfolio</div>
+    <nav>
+        <a href="/main">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+        <a href="/projects">Projects</a>
+    </nav>
+</header>
+
+<!-- MAIN BODY -->
+<main>
+    <div class="hero">
+        <h1>Hello, I'm <span>Dhanunjaya</span></h1>
+        <p>
+            Welcome to my portfolio website! I am a passionate Full Stack Developer,
+            Machine learning and Aws, specializing in Python, Flask, Node.js, Express and MongoDB.<br>
+            Explore my projects and skills to learn more about my work.
+        </p>
+        <!-- Get Portfolio Button -->
+        <a href="/main">
+            <button class="btn">Get Portfolio</button>
+        </a>
+    </div>
+</main>
+
+
+
+<!-- FOOTER -->
+<footer>
+    <p>Backend Developer | Flask | Node.js | MongoDB</p>
+    <p>© 2026 Dhanunjaya. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dhanunjaya | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/main.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="navbar">
+    <div class="logo">Portfolio</div>
+
+    <nav>
+        <a href="/">Main</a>
+        <a href="/about">About</a>
+        <a href="/projects">Projects</a>
+        <a href="/contact">Contact</a>
+    </nav>
+
+    <div class="profile-pic">
+        <img src="../static/images/dhanunjaya.jpeg" alt="Profile">
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <h1>Hi, I'm <span>Dhanunjaya</span></h1>
+    <p>Full Stack Developer | Python | Flask | Node.js | MongoDB</p>
+    <p>Backend Developer | REST APIs | Git & GitHub</p>
+</section>
+
+<!-- SKILLS -->
+<section class="container" id="skills">
+    <div class="glass-card">
+        <h2>Technical Skills</h2>
+        <div class="skill-tags">
+            <span>Python</span>
+            <span>Flask</span>
+            <span>Node.js</span>
+            <span>MongoDB</span>
+            <span>REST APIs</span>
+            <span>Git & GitHub</span>
+            <span>Reactjs</span>
+            <span>Express</span>
+            <span>Aws</span>
+            <span>Machine Learning</span>
+            <span>Data Analysis</span>
+            <span>Data structures</span>
+            <span>Deep Learning</span>
+            <span>javascript</span>
+            <span>Algorithms</span>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="container" id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects">
+        {% for project in projects %}
+        <div class="project-card">
+            <h3>{{ project.title }}</h3>
+            <p>{{ project.description }}</p>
+            <a href="{{ project.link }}" target="_blank">View Project</a>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="container" id="contact">
+    <div class="glass-card">
+        <h2>Contact</h2>
+        <p>Email: dhanunjaya@gmail.com</p>
+        <p>GitHub: https://github.com/Dhanunjaya23-02-2006</p>
+        <p>LinkedIn: https://www.linkedin.com/in/ambati-dhanunjaya-36b980309/</p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>Building scalable backend systems with passion 🚀</p>
+    <p>© 2026 Dhanunjaya</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #00eaff;
+}
+
+.profile-pic img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #00eaff;
+}
+
+/* MAIN */
+.projects-main {
+    flex: 1;
+    padding: 50px 70px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Exactly 3 cards per row */
+    gap: 30px;
+}
+
+/* PROJECT CARDS */
+.project-card {
+    background: rgba(255,255,255,0.12);
+    padding: 25px;
+    border-radius: 15px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-card h3 {
+    color: #00eaff;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 14px;
+    opacity: 0.9;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.project-card .btn {
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    background: #00eaff;
+    color: #111;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0,234,255,0.4);
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.4);
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 1000px) {
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row on tablet */
+    }
+}
+
+@media (max-width: 650px) {
+    .projects-container {
+        grid-template-columns: 1fr; /* 1 card per row on mobile */
+    }
+}

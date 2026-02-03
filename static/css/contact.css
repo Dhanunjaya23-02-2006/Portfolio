@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #00eaff;
+}
+
+.profile-pic img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #00eaff;
+}
+
+/* MAIN */
+.contact-main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.contact-container {
+    width: 100%;
+    max-width: 600px;
+}
+
+.contact-card {
+    background: rgba(255,255,255,0.12);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+.contact-card h2 {
+    color: #00eaff;
+    margin-bottom: 20px;
+}
+
+.contact-card label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.contact-card input,
+.contact-card textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+}
+
+.contact-card input:focus,
+.contact-card textarea:focus {
+    outline: 2px solid #00eaff;
+}
+
+.contact-card .btn {
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    background: #00eaff;
+    color: #111;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-card .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0,234,255,0.4);
+}
+
+#status {
+    margin-top: 15px;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.4);
+    font-size: 14px;
+    opacity: 0.85;
+}
