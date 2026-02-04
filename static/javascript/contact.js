@@ -9,7 +9,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 
     const status = document.getElementById('status');
 
-    emailjs.sendForm('service_hmvh2iu', 'template_841zi6o', this)
+    emailjs.sendForm('service_hmvh2iu', 'template_ubcjmmj', this)
         .then(function(){
             status.innerText = "Message sent successfully!";
             status.style.color = "#00ff88";
