@@ -1,86 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>About | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../static/css/about.css">
-</head>
-<body>
+{% extends "layout.html" %}
 
-<!-- HEADER -->
-<header class="navbar">
-    <div class="logo">Portfolio</div>
+{% block title %}Dhanunjaya | About{% endblock %}
 
-    <nav>
-        <a href="/main">Home</a>
-        <a href="/about" class="active">About</a>
-        <a href="/contact">Contact</a>
-        <a href="/projects">Projects</a>
-    </nav>
-
-    <div class="profile-pic">
-        <img src="../static/images/dhanunjaya.jpeg" alt="Profile">
-    </div>
-</header>
-
-<!-- MAIN -->
-<main class="about-main">
-    <div class="about-container">
-
-        <!-- EDUCATION CARDS -->
-        <section class="education">
-            <div class="card">
+{% block content %}
+<div class="container">
+    <h2 class="section-title gradient-text">My Journey</h2>
+    <div class="about-grid">
+        <div class="education-timeline">
+            <div class="glass-card timeline-card">
                 <h3>Graduation</h3>
-                <p>
-                    I am currently pursuing my graduation at Malla Reddy University in the stream of Artificial Intelligence 
-                    and Machine Learning (AIML). My academic focus is centered on strong problem-solving skills, 
-                    application development, and core software fundamentals, including data structures, algorithms, 
-                    and system design concepts. I have a keen interest in machine learning, deep learning, and data analytics, where I work on applying theoretical concepts to real-world problems. Through hands-on projects and continuous practice, I aim to build efficient, scalable, and intelligent software solutions.
-                </p>
+                <p>Pursuing Artificial Intelligence & Machine Learning (AIML) at Malla Reddy University. Specializing in intelligent software solutions, data structures, and system design.</p>
             </div>
-
-            <div class="card">
+            <div class="glass-card timeline-card">
                 <h3>Intermediate</h3>
-                <p>
-                    I completed my Intermediate education at Sri Chaitanya Junior College, 
-                    Kukatpally, securing 939 marks, with a strong academic focus on Mathematics and Physics.
-                    This phase helped me develop solid analytical, logical, and problem-solving skills,
-                    forming a strong foundation for engineering and technology-oriented studies.
-                </p>
+                <p>Completed at Sri Chaitanya Junior College (939 marks). Focused on Mathematics and Physics, building a rock-solid analytical foundation.</p>
             </div>
-
-            <div class="card">
+            <div class="glass-card timeline-card">
                 <h3>Schooling</h3>
-                <p>
-                    I completed my schooling at Navketan Model School in 2021 under the SSC board. Along with academics, I actively participated in extracurricular 
-                    activities and earned certificates in Chess and Kabaddi, 
-                    which helped develop strategic thinking, teamwork, and leadership skills.
-                </p>
+                <p>Completed at Navketan Model School (2021). Active in strategic games like Chess, which honed my logical thinking early on.</p>
             </div>
-        </section>
-
-        <!-- ASIDE -->
-        <aside class="about-aside">
-            <div class="card">
-                <h3>Hobbies & Interests</h3>
-                <ul>
-                    <li>Playing online & outdoor games</li>
-                    <li>Exploring new technologies</li>
-                    <li>Problem-solving & coding practice</li>
-                    <li>Watching tech-related content</li>
+        </div>
+        
+        <aside class="about-sidebar">
+            <div class="glass-card">
+                <h3>Interests</h3>
+                <ul style="list-style: none; padding: 0; margin-top: 15px; color: var(--text-muted);">
+                    <li style="margin-bottom: 10px;">• Advanced Problem Solving</li>
+                    <li style="margin-bottom: 10px;">• Exploring AI/ML Trends</li>
+                    <li style="margin-bottom: 10px;">• Strategy Games (Chess)</li>
+                    <li style="margin-bottom: 10px;">• Scalable Backend Architecture</li>
                 </ul>
             </div>
         </aside>
-
     </div>
-</main>
-
-<!-- FOOTER -->
-<footer class="footer">
-    <p>Backend Developer | Flask | Node.js | MongoDB</p>
-    <p>© 2026 Portfolio. All rights reserved.</p>
-</footer>
-
-</body>
-</html>
+</div>
+{% endblock %}
