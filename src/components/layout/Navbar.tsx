@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Command } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { cn } from '../../utils/cn';
 
 const navLinks = [
