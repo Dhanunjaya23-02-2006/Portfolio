@@ -1,0 +1,5 @@
+# Robots.txt for portfolio-dhanunjaya.onrender.com
+User-agent: *
+Allow: /
+
+Sitemap: https://portfolio-dhanunjaya.onrender.com/sitemap.xml
